@@ -1,0 +1,21 @@
+A cosa servono le librerie CORS e come si applicano?
+Cors serve per aiutarci a fare delle richieste di origine incrociate (cross origin)
+Spiega questo codice 
+
+ this.http.get('http://GITPOD_SERVER_URL/api').subscribe(
+     data => {this.results = data['results'];
+  });
+  specificando in particolare
+  A chi deve essere fatta la richiesta http? deve essere fatta all'url del server
+  Come viene applicato il meccanismo dell’observable - quando riceviamo i dati li mostriamo nella pagina web
+  Come vengono ricevuti i dati dall’observable e in quale variabile sono inseriti - vengono ricevuti dall'url, sono inseriti in data, results.
+
+Riscrivi (e testa) il codice sopra esplicitando 
+  una variabile observable ritornata dal metodo http.get()
+  una arrow function separata da passare come parametro alla subscribe
+
+Disegna l’architettura dell’applicazione evidenziando lo scambio di messaggi tra
+  Browser e server angular
+  Browser e server node
+  
+Browser --> Richiesta pagina (URL) --> Node --> Recupero pagine --> Angular ---> Node --> Riposta --> Visualizzazione pagina
